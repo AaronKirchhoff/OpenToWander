@@ -51,7 +51,7 @@ public class UserController {
 		}
 		User user = this.uService.getByEmail(email);
 		session.setAttribute("user_id", user.getId());
-		return "redirect:/fruitstand";
+		return "redirect:/opentowander";
 	}
 	
 	@GetMapping("/logout")
